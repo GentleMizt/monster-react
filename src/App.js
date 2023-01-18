@@ -6,14 +6,13 @@ import Search_bar from './search-bar';
 
 function App() {
   const [arrOfData, setArrOfData] =useState([]);
-  
+  const [searchText, setSearchText] = useState();
 
 
   useEffect(() =>{
     fetch('https://jsonplaceholder.typicode.com/users').then(data =>{
       return data.json();
     }).then(result=>{
-      // console.log(result);
       setArrOfData(result);
       console.log(arrOfData);
     }).catch(err => console.log(err));
@@ -22,7 +21,7 @@ function App() {
 
   return (
     <div>
-      <Search_bar></Search_bar>
+      <Search_bar/>
       <div className='card-grid'>
       {arrOfData.map((cur, index)=> <Card key={index} cur ={cur}/>)}
       </div>
