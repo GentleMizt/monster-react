@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div>
-      {arrOfData.map((cur, index)=> <Card cur ={cur}/>)}
+      {arrOfData.map((cur, index)=> <Card key={index} cur ={cur}/>)}
     </div>
   );
 }
