@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Search_bar = () => {
+const Search = ({textCheck}) => {
   return (
     <div>
-        <input placeholder='Enter Monster Name' />
-    </div>
+        <input onChange={textCheck} placeholder='Enter Monster Name' />
+    </div> 
   )
 }
 
-export default Search_bar
+export default Search

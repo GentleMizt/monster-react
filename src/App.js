@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css';
 import Card from './card';
-import Search_bar from './search-bar';
+import Search from './search-bar';
 
 function App() {
   const [arrOfData, setArrOfData] =useState([]);
@@ -15,7 +15,7 @@ function App() {
       return data.json();
     }).then(result=>{
       setArrOfData(result);
-      console.log(arrOfData);
+      // console.log(arrOfData);
     }).catch(err => console.log(err));
   }, [])
 
@@ -23,10 +23,10 @@ function App() {
   const handleTextInput = (e) =>{
     setSearchText(e.target.value);
   }
-
+  console.log(searchText);
   return (
     <div>
-      <Search_bar onChange={handleTextInput} />
+      <Search textCheck={handleTextInput} />
       <div className='card-grid'>
       {arrOfData.map((cur, index)=> <Card key={index} cur ={cur}/>)}
       </div>
