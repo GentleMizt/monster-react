@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ({cur}) => {
   return (
     <div>
         <img/>
-        <h2></h2>
-        <p></p>
+        <h2>{cur.name}</h2>
+        <p>{cur.email}</p>
     </div>
   )
 }
