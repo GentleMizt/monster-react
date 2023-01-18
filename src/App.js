@@ -6,7 +6,7 @@ import Search_bar from './search-bar';
 
 function App() {
   const [arrOfData, setArrOfData] =useState([]);
-  const [searchText, setSearchText] = useState();
+  const [searchText, setSearchText] = useState('');
 
 
   useEffect(() =>{
