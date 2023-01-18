@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css';
 import Card from './card';
+import Search_bar from './search-bar';
 
 function App() {
   const [arrOfData, setArrOfData] =useState([]);
@@ -20,8 +21,11 @@ function App() {
 
 
   return (
-    <div className='card-grid'>
+    <div>
+      <Search_bar></Search_bar>
+      <div className='card-grid'>
       {arrOfData.map((cur, index)=> <Card key={index} cur ={cur}/>)}
+      </div>
     </div>
   );
 }
