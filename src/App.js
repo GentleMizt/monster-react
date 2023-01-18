@@ -7,9 +7,7 @@ function App() {
       return data.json();
     }).then(result=>{
       console.log(result);
-    }).catch(err=>{
-      console.log(err);
-    })
+    }).catch(err => console.log(err));
   }, [])
 
 
