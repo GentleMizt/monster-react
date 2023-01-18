@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css';
+import Card from './card';
 
 function App() {
   const [arrOfData, setArrOfData] =useState([]);
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <div>
-      {arrOfData.map((cur, index)=> <p key={index}>{cur.name}</p>)}
+      {arrOfData.map((cur, index)=> <Card />)}
     </div>
   );
 }
