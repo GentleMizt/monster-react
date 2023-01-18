@@ -9,6 +9,7 @@ function App() {
   const [searchText, setSearchText] = useState('');
 
 
+
   useEffect(() =>{
     fetch('https://jsonplaceholder.typicode.com/users').then(data =>{
       return data.json();
@@ -18,10 +19,14 @@ function App() {
     }).catch(err => console.log(err));
   }, [])
 
+  
+  const handleTextInput = (e) =>{
+    setSearchText(e.target.value);
+  }
 
   return (
     <div>
-      <Search_bar/>
+      <Search_bar onChange={handleTextInput} />
       <div className='card-grid'>
       {arrOfData.map((cur, index)=> <Card key={index} cur ={cur}/>)}
       </div>
