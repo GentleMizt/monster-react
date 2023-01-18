@@ -20,7 +20,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className='card-grid'>
       {arrOfData.map((cur, index)=> <Card key={index} cur ={cur}/>)}
     </div>
   );
