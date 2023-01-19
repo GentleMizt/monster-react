@@ -23,7 +23,15 @@ function App() {
   const handleTextInput = (e) =>{
     setSearchText(e.target.value);
   }
-  console.log(searchText);
+  // console.log(searchText);
+
+
+    let filteredArr = arrOfData.filter(cur=> {
+      return cur.name.includes(searchText)
+    })
+
+
+
   return (
     <div className='overall-div'>
       <h1 className="monster">MonStERS RolodEX</h1>
