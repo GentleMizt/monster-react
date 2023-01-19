@@ -6,6 +6,9 @@
 html{
   font-size: 10px;
 }
+.overall-div{
+  background-color: blue;
+}
 .card-grid{
   display: grid;
   grid-template-columns: repeat(4,1fr);

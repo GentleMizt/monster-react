@@ -25,7 +25,7 @@ function App() {
   }
   console.log(searchText);
   return (
-    <div>
+    <div className='overall-div'>
       <h1 className="monster">MonStERS RolodEX</h1>
       <Search textCheck={handleTextInput} />
       <div className='card-grid'>
