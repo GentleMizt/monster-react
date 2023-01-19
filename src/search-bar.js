@@ -1,9 +1,10 @@
 import React from 'react'
 
+
 const Search = ({textCheck}) => {
   return (
     <div>
-        <input onChange={textCheck} placeholder='Enter Monster Name' />
+      <input className=""s-input onChange={textCheck} placeholder='Search Monster' />
     </div> 
   )
 }
