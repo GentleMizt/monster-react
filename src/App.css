@@ -7,7 +7,7 @@ html{
   font-size: 10px;
 }
 .overall-div{
-  background-color: blue;
+  background-color:lightblue;
 }
 .card-grid{
   display: grid;
