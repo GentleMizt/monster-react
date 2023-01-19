@@ -22,13 +22,13 @@ function App() {
 
   
   const handleTextInput = (e) =>{
-    setSearchText(e.target.value);
+    setSearchText(e.target.value.toLowerCase());
   }
   // console.log(searchText);
 
     useEffect(() =>{
       let filteredArr = arrOfData.filter(cur=> {
-        return cur.name.includes(searchText)
+        return cur.name.toLowerCase().includes(searchText)
       })
       setFilteredMonster(filteredArr);  
     },[searchText])
