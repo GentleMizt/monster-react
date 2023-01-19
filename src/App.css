@@ -40,9 +40,13 @@ html{
 }
 .card{
   background-color: aqua;
-  width: 70%;
+  width: 80%;
   border-radius: 1rem;
   text-align: center;
+  padding: 2rem 4rem;
+}
+.card img{
+  width: 100%;
 }
 .card h2{
   font-weight: 600;
