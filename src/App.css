@@ -7,12 +7,30 @@ html{
   font-size: 10px;
 }
 .overall-div{
-  background-color:lightblue;
+  background-color: #007C7E;
+  padding: 5rem;
+  width: 100vw;
+}
+.overall-div h1{
+  color: #0CCAC4;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+.s-input{
+  padding: 1.5rem;
+  margin: 2rem 0 7rem 0;
+  outline: 0;
+  border: none;
+  font-size: 1.5rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%)
 }
 .card-grid{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 90%;
   margin: auto;
   background-color: blue;
