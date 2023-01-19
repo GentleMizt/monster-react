@@ -31,7 +31,7 @@ function App() {
         return cur.name.includes(searchText)
       })
       setFilteredMonster(filteredArr);  
-    },[])
+    },[searchText])
     
   return (
     <div className='overall-div'>
