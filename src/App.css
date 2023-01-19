@@ -36,11 +36,11 @@ html{
   margin: auto;
   padding: 1rem;
   background-color: linear-gradient(diagonal, green, yellow, orange);
-  gap: 1rem;
+  gap: 2rem;
 }
 .card{
   background-color: aqua;
-  width: 80%;
+  width: 100%;
   border-radius: 1rem;
   text-align: center;
   padding: 2rem 4rem;
