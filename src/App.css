@@ -10,7 +10,7 @@ html{
   background-color: #007C7E;
   padding: 5rem;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 .overall-div h1{
   color: #0CCAC4;
@@ -42,7 +42,7 @@ html{
   background-color: aqua;
   width: 70%;
   border-radius: 1rem;
-  top:;
+  text-align: center;
 }
 .card h2{
   font-weight: 600;
