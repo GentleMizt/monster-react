@@ -31,8 +31,7 @@ function App() {
       return cur.name.includes(searchText)
     })
 
-    console.log(filteredArr);
-
+    setFilteredMonster(filteredArr);
 
   return (
     <div className='overall-div'>
