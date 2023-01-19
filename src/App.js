@@ -26,6 +26,7 @@ function App() {
   console.log(searchText);
   return (
     <div>
+      <h1 className="monster">MonStERS RolodEX</h1>
       <Search textCheck={handleTextInput} />
       <div className='card-grid'>
       {arrOfData.map((cur, index)=> <Card key={index} cur ={cur}/>)}

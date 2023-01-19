@@ -10,6 +10,8 @@ html{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   border: 1px solid red;
+  width: 90%;
+  margin: auto;
   background-color: blue;
   background-image: linear-gradient(blue, green, yellow, orange);
   gap: 1rem;
