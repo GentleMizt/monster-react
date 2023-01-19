@@ -10,6 +10,7 @@ html{
   background-color: #007C7E;
   padding: 5rem;
   width: 100vw;
+  height: 100vh;
 }
 .overall-div h1{
   color: #0CCAC4;
@@ -34,12 +35,16 @@ html{
   width: 90%;
   margin: auto;
   padding: 1rem;
-  background-color: blue;
-  background-image: linear-gradient( to-right, green, yellow, orange);
+  background-color: linear-gradient(diagonal, green, yellow, orange);
   gap: 1rem;
 }
 .card{
-  background-color: white;
+  background-color: aqua;
   width: 70%;
   border-radius: 1rem;
+  top:;
+}
+.card h2{
+  font-weight: 600;
+  margin-bottom: 3rem;
 }
