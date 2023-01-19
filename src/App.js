@@ -7,6 +7,7 @@ import Search from './search-bar';
 function App() {
   const [arrOfData, setArrOfData] =useState([]);
   const [searchText, setSearchText] = useState('');
+  const [filteredMonster, setFilteredMonster] = useState(arrOfData);
 
 
 
@@ -30,6 +31,7 @@ function App() {
       return cur.name.includes(searchText)
     })
 
+    console.log(filteredArr);
 
 
   return (
@@ -37,7 +39,7 @@ function App() {
       <h1 className="monster">MonStERS RolodEX</h1>
       <Search textCheck={handleTextInput} />
       <div className='card-grid'>
-      {arrOfData.map((cur, index)=> <Card key={index} cur ={cur}/>)}
+      {filteredMonster.map((cur, index)=> <Card key={index} cur ={cur}/>)}
       </div>
     </div>
   );
