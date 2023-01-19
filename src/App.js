@@ -26,13 +26,13 @@ function App() {
   }
   // console.log(searchText);
 
-
-    let filteredArr = arrOfData.filter(cur=> {
-      return cur.name.includes(searchText)
-    })
-
-    setFilteredMonster(filteredArr);
-
+    useEffect(() =>{
+      let filteredArr = arrOfData.filter(cur=> {
+        return cur.name.includes(searchText)
+      })
+      setFilteredMonster(filteredArr);  
+    },[])
+    
   return (
     <div className='overall-div'>
       <h1 className="monster">MonStERS RolodEX</h1>
